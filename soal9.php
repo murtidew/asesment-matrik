@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suhu</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <form method="post" action="#">
-    <tr>
-      <label for="suhu">Input Suhu</label>
-      <input type="text" name="suhu" id="suhu">
-      <input type="submit" value="Submit" name="submit">
-    </tr>
-  </form>
+    <form action="" method="post">
+        <label for="">Suhu fahrenheit</label>
+        <input type="number" name="suhu_f"><br><br>
 
-  <?php
+         <input type="submit" name="submit">
+    </form>
+    <?php
+    if(isset($_POST['submit'])){
+        $suhu_f = $_POST["suhu_f"];
 
-  if (isset($_POST['submit'])) {
-    $suhu = $_POST['suhu'];
-    $suhuf;
-
-    $suhuf = $suhu / 33.8;
-
-    if($suhu > 300){
-      echo "panas";
+        $suhu_c = $suhu_f / 33.8;
+        
+        if($suhu_f >= 300){
+            echo "Panas";
+        }
+        elseif($suhu_f >= 250){
+            echo "Normal";
+        }
+        else{
+            echo "Dingin";
+        }
     }
-    elseif($suhu > 250){
-      echo "dingin";
-    }
-    else{
-      echo "normal";
-    }
-  }
-
-  ?>
+    ?>
 </body>
 </html>
