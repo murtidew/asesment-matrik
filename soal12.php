@@ -8,7 +8,7 @@
 
     <style>
         body{
-        background-image: url("https://i.pinimg.com/564x/49/08/4e/49084e55c2b6320c153af7feea2d1502.jpg");
+        background-color: #FFB7B7;
         background-repeat: no-repeat;
         background-size:cover;
         font-family:  'sans-serif';
@@ -30,6 +30,7 @@
         background-color: #9EB384 ;
         display: block;
         margin-bottom: 15px;
+        margin : 20px;
         border-radius: 30px;
         font-weight: bold;
 

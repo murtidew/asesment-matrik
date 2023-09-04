@@ -9,7 +9,7 @@
     <style>
 
 body{
-        background-image: url("https://i.pinimg.com/564x/49/08/4e/49084e55c2b6320c153af7feea2d1502.jpg");
+        background-color: #FFB7B7;
         background-repeat: no-repeat;
         background-size:cover;
         font-family:  'sans-serif';
@@ -34,6 +34,14 @@ body{
         border-radius: 30px;
         font-weight: bold;
         }
+
+        .flex-container{
+	    display: flex; /* mengubah ke mode flexbox */
+	    flex-wrap: wrap; /* mengatur item flexbox dapat diwrap/apabila container tidak cukup lagi untuk membungkus item, maka item akan diturunkan */ 
+	    flex-direction: row; /* Mengatur arah item ke row/satu baris */
+	    justify-content: center; /* mensejajarkan item selalu di tengah dalam satu baris */
+        }
+
         </style>
 </head>
 <body>
